@@ -94,7 +94,7 @@
 		};
 
 		pm8916_chg: qcom,charger {
-			qcom,chg-vadc = <0xab>;
+			qcom,chg-vadc = <&pm8916_vadc>;
 			qcom,chg-adc_tm = <0x96>;
 			qcom,charging-disabled;
 			qcom,use-external-charger;
