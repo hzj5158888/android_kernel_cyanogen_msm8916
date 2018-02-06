@@ -12,7 +12,7 @@
 
 /* manufacturer is 天津力神电池股份有限公司 */
 
-qcom,CPLD-312-LS-data {
+qcom,CPLD-351-LS-data {
 	qcom,fcc-mah = <2500>;
 	qcom,default-rbatt-mohm = <221>;
 	qcom,rbatt-capacitive-mohm = <0>;
@@ -21,7 +21,7 @@ qcom,CPLD-312-LS-data {
 	qcom,v-cutoff-uv = <3400000>;
 	qcom,chg-term-ua = <100000>;
 	qcom,batt-id-kohm = <220>;
-	qcom,battery-type = "CPLD-312-LS";
+	qcom,battery-type = "CPLD-351-LS";
 
 	qcom,rbatt-sf-lut {
 		qcom,lut-col-legend = <(-20) 0 25 40 60>;

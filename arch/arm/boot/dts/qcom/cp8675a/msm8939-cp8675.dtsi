@@ -337,6 +337,7 @@
 		#include "batterydata-CPLD-351-LS.dtsi"
 		#include "batterydata-CPLD-351-MK.dtsi"
 		#include "batterydata-CPLD-351-TM.dtsi"
+		#include "batterydata-CPLD-351-VK.dtsi"
 	};
 };
 
