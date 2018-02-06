@@ -45,5 +45,60 @@
 				reg = <0x4000 0x100>;
 			};
 		};
+
+		pm8916_mpps: mpps {
+			mpp@a000 {
+				status = "disabled";
+			};
+
+			mpp@a100 {
+				status = "disabled";
+			};
+
+			mpp@a200 {
+				status = "disabled";
+			};
+
+			mpp@a300 {
+				qcom,mode = <0x1>;
+				qcom,invert = <0x0>;
+				qcom,src-sel = <0x4>;
+				qcom,vin-sel = <0x0>;
+				qcom,master-en = <0x1>;
+			};
+		};
+
+		pm8916_gpios: gpios {
+			linux,phandle = <0xa6>;
+			phandle = <0xa6>;
+
+			gpio@c000 {
+				status = "disabled";
+			};
+
+			gpio@c100 {
+				qcom,mode = <0x0>;
+				qcom,pull = <0x5>;
+				qcom,vin-sel = <0x2>;
+				qcom,src-sel = <0x2>;
+				qcom,master-en = <0x1>;
+			};
+
+			gpio@c200 {
+				status = "disabled";
+			};
+
+			gpio@c300 {
+				status = "disabled";
+			};
+		};
+
+		pm8916_chg: qcom,charger {
+			qcom,chg-vadc = <0xab>;
+			qcom,chg-adc_tm = <0x96>;
+			qcom,charging-disabled;
+			qcom,use-external-charger;
+		};
+
 	};
 };
