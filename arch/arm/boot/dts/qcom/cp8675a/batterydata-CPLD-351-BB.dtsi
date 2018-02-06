@@ -12,7 +12,7 @@
 
 /* manufacturer is ±È¿Ëµç³Ø */
 
-qcom,CPLD-351-BB-data {
+qcom,CPLD-312-BB-data {
 	qcom,fcc-mah = <2500>;
 	qcom,default-rbatt-mohm = <221>;
 	qcom,rbatt-capacitive-mohm = <0>;
@@ -21,7 +21,7 @@ qcom,CPLD-351-BB-data {
 	qcom,v-cutoff-uv = <3400000>;
 	qcom,chg-term-ua = <100000>;
 	qcom,batt-id-kohm = <47>;
-	qcom,battery-type = "CPLD-351-BB";
+	qcom,battery-type = "CPLD-312-BB";
 
 	qcom,rbatt-sf-lut {
 		qcom,lut-col-legend = <(-20) 0 25 40 60>;

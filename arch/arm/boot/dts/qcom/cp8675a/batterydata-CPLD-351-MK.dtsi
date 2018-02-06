@@ -12,7 +12,7 @@
 
 /* manufacturer is 东莞市迈科新能源有限公司 */
 
-qcom,CPLD-351-MK-data {
+qcom,CPLD-312-MK-data {
 	qcom,fcc-mah = <2500>;
 	qcom,default-rbatt-mohm = <198>;
 	qcom,rbatt-capacitive-mohm = <0>;
@@ -21,7 +21,7 @@ qcom,CPLD-351-MK-data {
 	qcom,v-cutoff-uv = <3400000>;
 	qcom,chg-term-ua = <100000>;
 	qcom,batt-id-kohm = <100>;
-	qcom,battery-type = "CPLD-351-MK";
+	qcom,battery-type = "CPLD-312-MK";
 
 	qcom,fcc-temp-lut {
 		qcom,lut-col-legend = <(-20) 0 25 40 60>;
