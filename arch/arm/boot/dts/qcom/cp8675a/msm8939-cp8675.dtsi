@@ -123,6 +123,10 @@
 			compatible = "mpu6880";
 			reg = <0x68>;
 		};
+		yas533@2e {
+			compatible = "compass";
+			reg = <0x2e>;
+		};
 		pa12200001@1e {
 			compatible = "pa12200001";
 			reg = <0x1e>;
@@ -175,47 +179,11 @@
 				};
 			};
 		};
-		aw2013@45 {
-			compatible = "awinic,aw2013";
+		aw-leds@45 {
+			compatible = "aw-leds";
 			reg = <0x45>;
-			vdd-supply = <&pm8916_l17>;
-			vcc-supply = <&pm8916_l6>;
-
-			aw2013,red {
-				aw2013,name = "red";
-				aw2013,id = <2>;
-				aw2013,gpio = <1018>;
-				aw2013,max-brightness = <255>;
-				aw2013,max-current = <3>;
-				aw2013,rise-time-ms = <2>;
-				aw2013,hold-time-ms = <1>;
-				aw2013,fall-time-ms = <2>;
-				aw2013,off-time-ms = <1>;
-			};
-
-			aw2013,green {
-				aw2013,name = "green";
-				aw2013,id = <1>;
-				aw2013,gpio = <1018>;
-				aw2013,max-brightness = <255>;
-				aw2013,max-current = <3>;
-				aw2013,rise-time-ms = <2>;
-				aw2013,hold-time-ms = <1>;
-				aw2013,fall-time-ms = <2>;
-				aw2013,off-time-ms = <1>;
-			};
-
-			aw2013,blue {
-				aw2013,name = "blue";
-				aw2013,id = <0>;
-				aw2013,gpio = <1018>;
-				aw2013,max-brightness = <255>;
-				aw2013,max-current = <3>;
-				aw2013,rise-time-ms = <2>;
-				aw2013,hold-time-ms = <1>;
-				aw2013,fall-time-ms = <2>;
-				aw2013,off-time-ms = <1>;
-			};
+			vdd_ana-supply = <0x6f>;
+			aw_leds,cfgs = <0x3fa 0x4 0x3 0x33 0x36 0x3d 0x3e 0x3f 0x2 0x5 0x32 0x35 0x3a 0x3b 0x3c 0x1 0x6 0x31 0x34 0x37 0x38 0x39>;
 		};
 
 	};
