@@ -146,7 +146,7 @@
 			compatible = "yl,yl_lc709203";
 			reg = <0x0B>;
 			qcom,lc-vadc = <&pm8916_vadc>;
-			yl,soc-high-scaled = <948>;
+			yl,soc-high-scaled = <980>;
 			yl,soc-low-scaled = <30>;
 			yl,lc709203-psy-name = "lc709203_battery";
 			yl,charge-psy-name = "battery";

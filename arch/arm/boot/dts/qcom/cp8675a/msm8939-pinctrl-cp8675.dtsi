@@ -57,11 +57,11 @@
 			qcom,num-grp-pins = <1>;
 			label = "pa12200001-irq";
 			pa12200001_default: pa12200001_default {
-				drive-strength = <6>;
+				drive-strength = <17>;
 				bias-pull-up;
 			};
 			pa12200001_sleep: pa12200001_sleep {
-				drive-strength = <2>;
+				drive-strength = <13>;
 				bias-pull-down;
 			};
 		};
