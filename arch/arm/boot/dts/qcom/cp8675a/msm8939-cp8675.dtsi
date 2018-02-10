@@ -107,13 +107,14 @@
 		compatible = "yl,yl_adc_battery";
 		yl,adc_batt_psy_name = "yl_adc_battery";
 		yl,charge_psy_name = "battery";
-		yl,lcd_open_delta_mv = <50>;
-		yl,lcd_close_delta_mv = <30>;
+		yl,lcd_open_delta_mv = <30>;
+		yl,lcd_close_delta_mv = <20>;
 		yl,bk_level_offset_step = <5>;
 		yl,pon_volt_delta = <50>;
+		yl,enable_pon_volt_correct = <0x1>;
 		yl,voltage_max_uv = <4350000>;
 		yl,capa_design_mAH = <2500>;
-		yl,soc_high_scaled = <98>;
+		yl,soc_high_scaled = <99>;
 		yl,soc_low_scaled = <3>;
 		qcom,yl_adc-vadc=<&pm8916_vadc>;
 	};
